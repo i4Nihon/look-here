@@ -1,0 +1,29 @@
+body {
+  background-color: #777777;
+}
+.field {
+  justify-content: center;
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border-style: solid;
+  margin: 5px;
+  float: left;
+  font-size: 26px;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.row {
+  float: left;
+  /*margin-right: 5%;*/
+}
+
+.active {
+  background-color: #DEB887FF;
+}
+
+.inactive {
+  background-color: #b6b6b6;
+}

@@ -1,0 +1,21 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #A0A0A0;
+    cursor: text;
+}
+p{
+ background-color: #A7A7A7;
+    padding: 5px;
+}
+
+button{
+  color: #000000;
+  background: #8A8A8A;
+  box-sizing: border-box;
+  border: 2px solid #333333;
+  border-radius: 1.5em;
+  width: 115px;
+  height: 50px;
+}
+
+

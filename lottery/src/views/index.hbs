@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lottery</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <center>
+    <p>
+      <button class="bigButton" id="stateButton"></button>
+    </p>
+    <p>
+      <p>
+        Minimalny watchtime (w minutach):
+        <input type="number" value="1" id="watchtime" >
+      </p>
+      <p>
+        Ilość wylosowanych osób:
+        <input type="number" value="3" id="numberOfViewers" >
+      </p>
+
+      <button class="bigButton" onclick="drawRandom()">WYLOSUJ OSOBY</button>
+    </p>
+    <p>
+      <button onclick="resetDB()">ZRESETUJ OSTATNI WATCHTIME WIDZÓW</button>
+      (nie ma wpływu na streamelements)
+      <div style="display: none;" id="confirmDiv">
+        To działanie jest NIEODWRACALNE!!! Aby potwierdzić kilknij ponownie.
+      </div>
+    </p>
+
+  <script src="/script.js"></script>
+
+  <h3>Wylosowani: </h3>
+  <div class="viewers" id="selectedViewers"></div>
+  </center>
+</body>
+</html>

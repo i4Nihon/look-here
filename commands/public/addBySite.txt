@@ -1,0 +1,41 @@
+!love;		${sender} kocha się w ${1|${random.chatter}} w ${random.1-100}%
+!randka;		${sender} zaprasza na kawe ${random.chatter}  ;1
+!randka;		${sender} i ${random.chatter} idą na randke ;2
+!sus;		${sender} jest sus w ${random.1-100}%
+!knaga;		${sender} ma ${random.1-99} mm
+!toxic;		${1|${sender}} jest toksyczny w ${random.0-100} % ;1
+!toxic;		${sender} jest toksyczny dla ${1|${random.chatter}} na ${random.0-100} % ;2
+!mad;		${sender} jest zmadowany na ${random.chatter}
+!habibi;		${sender} leci do Turcji z ${random.chatter}
+!spacer;		${sender} zaprasza na spacer ${random.chatter} ;1
+!spacer;		${sender} idzie na spacer z ${random.chatter} ;2
+!sigma;		${1|${sender}} jest w ${random.1-100} % sigmą
+!kiss;		${sender} chce buzi od ${random.chatter} ;1
+!kiss;		${sender} daje mokrego całusa ${random.chatter} ;2
+!kiss;		${sender} i ${random.chatter} całują się ;3
+!kiss;		${sender} i ${random.chatter} właśnie się przelizali ;4
+!kiss;		${random.pick '${sender} daje mokrego całusa ${random.chatter}' '${sender} chce buzi od ${random.chatter}' '${sender} i ${random.chatter} właśnie się przelizali' '${sender} i ${random.chatter} całują się'} ;5
+!iq;		${1|${sender}} ma ${random.0-200} iq
+!przytul;		${sender} przytula ${random.chatter}
+!przytul;	${sender} obezwładnia ${random.chatter} silnym przytulasem
+!sex;		${sender} wyczuwam jebanko na ${random.1-100} % z ${1|${random.chatter}} ;1
+!sex;		${sender} chce uprawiać ostre segzy z ${random.chatter} ;2
+!fmk;		${sender} chce: sexu z ${random.chatter}, poślubić ${random.chatter}, kopnąć ${random.chatter}
+!ship;		imo to ${user} x ${random.chatter} są ze sobą, rel?
+!kumpel;		${sender} i ${1|{random.chatter}} są kumplami na ${random.0-100}%
+!subs;		${channel} posiada ${channel.subs} subów
+!rank;		${customapi.https://api.kyroskoh.xyz/valorant/v1/mmr/eu/NICK/TAG?show=combo&display=0}
+!vanish; 	/timeout ${sender} 10
+!rzuć;		${sender} trafił ${1|${random.chatter}} ${random.pick 'klockiem' 'piłką' 'kapciem' 'kredą' 'pisakiem' 'myszką'} w ${random.pick 'dupala' 'nos' 'plecy' 'głowę'}
+!rumieniec;	${random.pick 'na widok ${random.chatter} po twarzy ${sender} spływa rumieniec' '${random.chatter} rumieni się na widok ${sender}'}
+!kick;		${sender} kopie w dupe ${random.chatter}
+!alko;		${random.pick '${sender} idzie na szocika z ${random.chatter}' '${sender} i ${random.chatter} idą na piwko' '${random.chatter} zaprasza ${sender} do baru' '${sender} zaprasza ${random.chatter} do baru'}
+!patelnia; ${sender} wziął patelnie i przywalił ${random.chatter} w ryj 
+!packa; ${sender} rozpłaszcza packą komara z twarzy ${random.chatter} ;1
+!packa; ${random.chatter} został grzecznie pierdolnięty packą na muchy przez ${sender} ;2
+!lick; ${sender} polizał po uchu ${random.chatter}
+!stupki; ${sender} połaskotał po stupkach ${random.chatter}
+!so; Zajżyjcie też do ${1}, ostatnio grał/a w ${game ${1}} https://twitch.tv/${channel ${1}} ;1
+!so; Zapraszam do ${1}, ostatnio grali tam w ${game ${1}} https://twitch.tv/${channel ${1}} ;2
+!so; Lećcie też do ${1}, ostatnia giera to ${game ${1}} https://twitch.tv/${channel ${1}} ;3
+!so; ${random.pick 'Zapraszam do ${1}, ostatnio grali tam w ${game ${1}} https://twitch.tv/${channel ${1}}' 'Lećcie też do ${1}, ostatnia giera to ${game ${1}} https://twitch.tv/${channel ${1}}' 'Zajżyjcie też do ${1}, ostatnio grał/a w ${game ${1}} https://twitch.tv/${channel ${1}}'} ;4

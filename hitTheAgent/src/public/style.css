@@ -1,0 +1,102 @@
+:root {
+  --width: 1px;
+  --height: 1px;
+  --agent-position: 1px;
+}
+
+body {
+  overflow: visible;
+}
+
+.agentOnHitContainer {
+  position: relative;
+  left: calc(var(--width) - 885px);
+  top: var(--agent-position);
+  width: 655px;
+  height: 655px;
+}
+
+.agent {
+  height: 654px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.agentOnHit {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.56);
+  z-index: 14;
+}
+
+.pango {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1280px;
+  height: 1280px;
+}
+
+.pangoSignAnimated {
+  animation: start-throw 920ms ease-in, throw-sign 2s 900ms linear;
+}
+
+.pangoAnimated {
+  animation: start-throw-for-pango 1.2s linear;
+}
+
+.pangoSign {
+  position: absolute;
+  height: 1280px;
+  width: 1030px;
+  left: 7%;
+  bottom: 0;
+}
+
+@keyframes start-throw-for-pango {
+  0% {
+    transform: rotate(0);
+    transform-origin: 0% 0%;
+  }
+  50% {
+    transform: rotate(-50deg);
+    transform-origin: 0% 100%;
+  }
+  100% {
+    transform: rotate(0);
+    transform-origin: 0% 0%;
+  }
+}
+
+@keyframes throw-sign {
+  0% {
+    transform: translate(7%, 0) rotate(0) scale(1);
+  }
+  100% {
+    transform: translate(
+        calc(var(--width) * 0.8),
+        calc(var(--agent-position) - 1200px)
+      )
+      rotate(1890deg) scale(0.3);
+  }
+}
+
+@keyframes start-throw {
+  0% {
+    transform: rotate(0);
+    transform-origin: 0% 0%;
+  }
+  50% {
+    transform: rotate(-50deg);
+    transform-origin: -25% 100%;
+  }
+  100% {
+    transform: rotate(-30deg);
+    transform-origin: 0% 0%;
+  }
+}

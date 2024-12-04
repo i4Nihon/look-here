@@ -1,0 +1,10 @@
+body{
+  background-color: #3b3b3b;
+  color: #a2a2a2;
+}
+ul{
+  list-style-type: decimal-leading-zero; 
+}
+.temp{
+  display: none;
+}
